@@ -3,6 +3,8 @@ import React, { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
 // import adv from "../assets/adv.png";
 //  import mobvdo from "../assets/inksynkmobvid.mp4";
+ import mobvdo from "../assets/inksynkmob.mp4";
+
 
  import owner from "../assets/parritosh.png";
  import img1 from "../assets/1.png";
@@ -354,7 +356,7 @@ function Hero() {
         muted
         playsInline
       >
-        <source src="src\assets\inksynkmob.mp4" type="video/mp4" />
+        <source src={mobvdo} type="video/mp4" />
       </video>
 
       {/* VIGNETTE EFFECT */}
