@@ -102,7 +102,7 @@ function Navbar() {
     document.body.style.overflow = open ? "hidden" : "auto";
   }, [open]);
 
-  const links = ["HOME", "ABOUT", "EXPERTISE", "CONTACT"];
+  const links = ["HOME", "ABOUT", "GALLERY", "CONTACT"];
 
   return (
     <>
