@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.animate-cta {
+  animation: ctaNudge 6s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
+
+@keyframes ctaNudge {
+  0% {
+    transform: translateY(0);
+  }
+  85% {
+    transform: translateY(0);
+  }
+  92% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
