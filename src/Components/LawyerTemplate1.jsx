@@ -1,19 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
-// import {  useRef } from "react";
 import gsap from "gsap";
-// import adv from "../assets/adv.png";
-//  import mobvdo from "../assets/inksynkmobvid.mp4";
- import mobvdo from "../assets/inksynkmob.mp4";
-
-
+import mobvdo from "../assets/inksynkmob.mp4";
  import owner from "../assets/parritosh.png";
  import img1 from "../assets/1.png";
  import img2 from "../assets/2.png";
  import img3 from "../assets/3.png";
  import img4 from "../assets/4.png";
  import img5 from "../assets/5.png";
-//  import img6 from "../assets/6.png";
-
 
 
 
@@ -32,7 +25,7 @@ export default function LawyerTemplate1() {
       <Navbar />
       <Hero />
       <StatsBar />
-      <Expertise />
+      <Gallery />
       <About />
       {/* <Work /> */}
       <ClientReviews/>
@@ -577,7 +570,7 @@ function Stat({ value, label }) {
    EXPERTISE — RICH CONTENT
    ========================================================= */
 
-function Expertise() {
+function Gallery() {
   const [showAll, setShowAll] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -602,7 +595,7 @@ function Expertise() {
   const visibleImages = isMobile && !showAll ? gallery.slice(0, 4) : gallery;
 
   return (
-    <section id="expertise" className="relative bg-[#0d0d0d] py-32 overflow-hidden">
+    <section id="gallery" className="relative bg-[#0d0d0d] py-32 overflow-hidden">
 
       {/* Background texture */}
       {/* <div
@@ -725,6 +718,7 @@ function Expertise() {
 /* =========================================================
    ABOUT — EDITORIAL DEPTH
    ========================================================= */
+
 
 function About() {
   const [ref, show] = useReveal();
